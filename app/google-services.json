@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678814680095",
+    "project_id": "arihant-sales-database",
+    "storage_bucket": "arihant-sales-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678814680095:android:c2760977bd1d2b5bae012a",
+        "android_client_info": {
+          "package_name": "com.arihantsales.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678814680095-tm0vj4p8bl6g6k6a2m2qaslsevjfk6fi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arihantsales.app",
+            "certificate_hash": "790a1eb013461083c5b130e116d9e891c2e04186"
+          }
+        },
+        {
+          "client_id": "678814680095-ug15tegd3nf429urrfuq5sp78blp9d57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIx5pQLQgKWCUFp95rtNmWbH_IoCw_vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678814680095-ug15tegd3nf429urrfuq5sp78blp9d57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
