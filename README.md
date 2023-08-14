@@ -1,4 +1,4 @@
-# Arihant Sales Android App
+# Arihant Sales
 
 ## Description
 Arihant Sales Android App is an e-commerce application for selling wall color paints. The app includes separate interfaces for customers and administrators. Administrators can add and manage products while customers can browse and purchase products.
