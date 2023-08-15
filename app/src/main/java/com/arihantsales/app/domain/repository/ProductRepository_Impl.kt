@@ -1,6 +1,5 @@
 package com.arihantsales.app.domain.repository
 
-import com.arihantsales.app.domain.model.Product
 import com.google.android.gms.tasks.Task
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QuerySnapshot
