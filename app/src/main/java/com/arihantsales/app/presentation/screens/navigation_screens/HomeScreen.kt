@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.arihantsales.app.composable.ProductListItem
-import com.arihantsales.app.viewmodel.ProductListViewModel
+import com.arihantsales.app.presentation.composable.ProductListItem
+import com.arihantsales.app.presentation.viewmodel.ProductListViewModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

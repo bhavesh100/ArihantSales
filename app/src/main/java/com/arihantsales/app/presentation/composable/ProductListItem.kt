@@ -1,8 +1,6 @@
-package com.arihantsales.app.composable
+package com.arihantsales.app.presentation.composable
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -14,11 +12,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
 import com.arihantsales.app.domain.model.Product
 
 @Composable
@@ -32,20 +31,22 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
         shape = RoundedCornerShape(5.dp),
         elevation = CardDefaults.cardElevation(2.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary)
-//        border = BorderStroke(1.dp, Color.Black)
     ) {
-            Box(modifier = Modifier.aspectRatio(1f).fillMaxWidth()
-                .background(color = Color.Gray)
-            )
+        AsyncImage(model = product.thumbnail,contentDescription = null,
+            contentScale = ContentScale.FillBounds,
+            modifier = Modifier
+                .aspectRatio(1f))
             Text(
                 text = product.name,
                 fontWeight = FontWeight.Bold,
-                modifier = Modifier.fillMaxWidth()
-                ,
+                modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
             )
-            Text(text = "price 100$", modifier = Modifier.fillMaxWidth()
-                , textAlign = TextAlign.Center)
+            Text(
+                text = "price 100$",
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
     }
 
 }
@@ -55,11 +56,11 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
 fun ItemPreiew(){
     ProductListItem(
         Product(
-            "jkhkjdfakjdf",
+            "ubebfhr",
             "Product name",
             "example.jpg",
             "description"
-    )
+        )
     ){
 
     }

@@ -1,10 +1,9 @@
-package com.arihantsales.app.domain
+package com.arihantsales.app.domain.usecase
 
 import com.arihantsales.app.common.Resource
 import com.arihantsales.app.domain.model.Product
 import com.arihantsales.app.domain.repository.ProductRepository
 import com.google.firebase.firestore.FirebaseFirestoreException
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await

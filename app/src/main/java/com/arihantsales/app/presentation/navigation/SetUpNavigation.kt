@@ -1,4 +1,4 @@
-package com.arihantsales.app.navigation
+package com.arihantsales.app.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController

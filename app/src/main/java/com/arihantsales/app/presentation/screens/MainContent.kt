@@ -13,7 +13,7 @@ import androidx.navigation.compose.rememberNavController
 import com.arihantsales.app.R
 import com.arihantsales.app.common.composable.BottomBar
 import com.arihantsales.app.common.composable.TopBar
-import com.arihantsales.app.navigation.SetUpNavigation
+import com.arihantsales.app.presentation.navigation.SetUpNavigation
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)

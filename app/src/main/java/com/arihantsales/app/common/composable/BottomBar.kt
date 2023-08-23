@@ -13,7 +13,7 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.arihantsales.app.navigation.BottomBarScreen
+import com.arihantsales.app.presentation.navigation.BottomBarScreen
 
 @Composable
 fun BottomBar(navController: NavHostController) {

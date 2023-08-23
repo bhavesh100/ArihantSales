@@ -1,4 +1,4 @@
-package com.arihantsales.app.navigation
+package com.arihantsales.app.presentation.navigation
 
 sealed class Routes(val route: String) {
     object Login : Routes("login")

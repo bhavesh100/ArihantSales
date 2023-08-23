@@ -1,4 +1,4 @@
-package com.arihantsales.app.viewmodel
+package com.arihantsales.app.presentation.viewmodel
 
 import com.arihantsales.app.domain.model.Product
 

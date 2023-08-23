@@ -1,4 +1,4 @@
-package com.arihantsales.app.navigation
+package com.arihantsales.app.presentation.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
