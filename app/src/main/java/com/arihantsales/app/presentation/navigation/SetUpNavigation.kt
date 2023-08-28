@@ -14,7 +14,7 @@ fun SetUpNavigation(
 ){
     NavHost(navController = navController, startDestination = BottomBarScreen.Home.route){
         composable(route = BottomBarScreen.Home.route){
-            HomeScreen(navController)
+            HomeScreen()
         }
         composable(route = BottomBarScreen.Favorite.route){
             FavoriteScreen(navController)
