@@ -12,4 +12,8 @@ class ProductRepository_Impl @Inject constructor(
     override suspend fun getproducts(): Task<QuerySnapshot> {
         return db.collection("products").get()
     }
+
+    override suspend fun getBannerImages(): Task<QuerySnapshot> {
+        return db.collection("banner_images").get()
+    }
 }

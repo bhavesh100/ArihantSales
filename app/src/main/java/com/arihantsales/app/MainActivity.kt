@@ -11,7 +11,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.arihantsales.app.presentation.screens.ScreenMain
+import com.arihantsales.app.presentation.screens.signup_screen.ScreenMain
 import com.arihantsales.app.ui.theme.ArihantSalesTheme
 import dagger.hilt.android.AndroidEntryPoint
 

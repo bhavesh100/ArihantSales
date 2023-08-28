@@ -8,4 +8,5 @@ import com.google.firebase.firestore.QuerySnapshot
 
 interface ProductRepository {
     suspend fun getproducts(): Task<QuerySnapshot>
+    suspend fun getBannerImages(): Task<QuerySnapshot>
 }

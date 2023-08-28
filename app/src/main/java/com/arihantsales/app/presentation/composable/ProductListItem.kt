@@ -2,6 +2,7 @@ package com.arihantsales.app.presentation.composable
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -23,8 +24,8 @@ import com.arihantsales.app.domain.model.Product
 @Composable
 fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
     Card(modifier = Modifier
-        .width(150.dp)
-        .padding(5.dp)
+        .fillMaxWidth(0.5f)
+        .padding(7.dp)
         .clickable {
             onItemClick(product)
         },
@@ -35,7 +36,8 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
         AsyncImage(model = product.thumbnail,contentDescription = null,
             contentScale = ContentScale.FillBounds,
             modifier = Modifier
-                .aspectRatio(1f))
+                .aspectRatio(1f)
+        )
             Text(
                 text = product.name,
                 fontWeight = FontWeight.Bold,
