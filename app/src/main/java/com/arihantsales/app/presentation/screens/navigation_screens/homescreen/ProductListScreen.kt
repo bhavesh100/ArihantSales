@@ -1,4 +1,4 @@
-package com.arihantsales.app.presentation.screens
+package com.arihantsales.app.presentation.screens.navigation_screens.homescreen
 
 import android.content.Intent
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -8,13 +8,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.arihantsales.app.presentation.ProductDetailActivity
-import com.arihantsales.app.presentation.composable.ProductListItem
+import com.arihantsales.app.presentation.productdetailactivity.ProductDetailActivity
+import com.arihantsales.app.presentation.screens.navigation_screens.homescreen.composable.ProductListItem
 import com.arihantsales.app.presentation.navigation.Routes
-import com.arihantsales.app.presentation.screens.navigation_screens.AutoChangerBanner
-import com.arihantsales.app.presentation.viewmodel.BannerImagesViewModel
-import com.arihantsales.app.presentation.viewmodel.ProductListViewModel
-import okhttp3.Route
+import com.arihantsales.app.presentation.screens.navigation_screens.homescreen.banner.BannerImagesViewModel
+import com.arihantsales.app.presentation.screens.navigation_screens.homescreen.composable.AutoChangerBanner
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
@@ -36,8 +34,7 @@ fun ProductListScreen(
             FlowRow {
                 productList.forEach{
                     ProductListItem(product = it){product->
-//                        navController.navigate("product_detail_screen")
-                        val intent = Intent(context,ProductDetailActivity::class.java)
+                        val intent = Intent(context, ProductDetailActivity::class.java)
                         intent.putExtra(Routes.ProductDetail.route+"/thumbnail",product.thumbnail)
                         intent.putExtra(Routes.ProductDetail.route+"/name",product.name)
                         intent.putExtra(Routes.ProductDetail.route+"/description",product.description)

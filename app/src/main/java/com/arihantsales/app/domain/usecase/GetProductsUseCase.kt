@@ -2,7 +2,7 @@ package com.arihantsales.app.domain.usecase
 
 import com.arihantsales.app.common.Resource
 import com.arihantsales.app.domain.model.Product
-import com.arihantsales.app.domain.repository.ProductRepository
+import com.arihantsales.app.data.remote.firebase.repository.ProductRepository
 import com.google.firebase.firestore.FirebaseFirestoreException
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

@@ -18,16 +18,23 @@ import com.arihantsales.app.presentation.navigation.SetUpNavigation
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainContent(){
+fun MainScreen(){
     val navController = rememberNavController()
     androidx.compose.material3.Scaffold(modifier = Modifier.fillMaxSize(),
         topBar = { TopBar(stringResource(R.string.app_name)) },
         bottomBar = { BottomBar(navController) },
         content = {
-            Box(modifier = Modifier.padding(5.dp,it.calculateTopPadding(),5.dp ,it.calculateBottomPadding())){
+            Box(
+                modifier = Modifier
+                    .padding(
+                        5.dp,
+                        it.calculateTopPadding()
+                        ,5.dp
+                        ,it.calculateBottomPadding()
+                    )
+            ){
                 SetUpNavigation(navController)
             }
-
         }
     )
 }

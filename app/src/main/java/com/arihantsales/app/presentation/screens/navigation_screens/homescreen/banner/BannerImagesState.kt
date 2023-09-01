@@ -1,6 +1,5 @@
-package com.arihantsales.app.presentation.viewmodel
+package com.arihantsales.app.presentation.screens.navigation_screens.homescreen.banner
 
-import com.arihantsales.app.domain.model.Product
 
 data class BannerImagesState(
     val isLoading: Boolean = false,

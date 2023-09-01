@@ -1,4 +1,4 @@
-package com.arihantsales.app.presentation.composable
+package com.arihantsales.app.presentation.screens.navigation_screens.homescreen.composable
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.interaction.collectIsDraggedAsState
@@ -22,7 +22,7 @@ fun AutoSlidingCarousel(
     itemsCount: Int,
     itemContent: @Composable (index: Int) -> Unit
 ){
-    val isDragged by pagerState.interactionSource.collectIsDraggedAsState()
+//    val isDragged by pagerState.interactionSource.collectIsDraggedAsState()
     LaunchedEffect(pagerState.currentPage){
         delay(autoSlideDuration)
         pagerState.animateScrollToPage((pagerState.currentPage + 1) % itemsCount)

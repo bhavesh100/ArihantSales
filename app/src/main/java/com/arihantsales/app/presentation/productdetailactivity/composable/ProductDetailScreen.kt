@@ -1,13 +1,8 @@
-package com.arihantsales.app.presentation.screens
+package com.arihantsales.app.presentation.productdetailactivity.composable
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.gestures.rememberScrollableState
-import androidx.compose.foundation.gestures.scrollable
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -19,7 +14,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -31,8 +25,8 @@ fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
     val scrollableState = rememberScrollState(0)
     Column(modifier = Modifier.verticalScroll(scrollableState)
         .padding(5.dp)) {
-
-        AsyncImage(model = thumbnail,contentDescription = null,
+        AsyncImage(
+            model = thumbnail,contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .fillMaxWidth()

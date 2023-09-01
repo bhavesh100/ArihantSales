@@ -1,8 +1,6 @@
-package com.arihantsales.app.domain.repository
+package com.arihantsales.app.data.remote.firebase.repository
 
-import com.arihantsales.app.common.Resource
-import com.arihantsales.app.domain.model.Product
-import com.google.android.gms.common.api.Response
+
 import com.google.android.gms.tasks.Task
 import com.google.firebase.firestore.QuerySnapshot
 

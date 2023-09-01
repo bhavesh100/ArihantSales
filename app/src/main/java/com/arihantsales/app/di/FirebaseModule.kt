@@ -1,6 +1,6 @@
 package com.arihantsales.app.di
 
-import com.arihantsales.app.domain.repository.ProductRepository
+import com.arihantsales.app.data.remote.firebase.repository.ProductRepository
 import com.arihantsales.app.data.remote.firebase.repository.ProductRepository_Impl
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

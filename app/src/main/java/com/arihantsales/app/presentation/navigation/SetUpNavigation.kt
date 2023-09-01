@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.arihantsales.app.presentation.screens.navigation_screens.FavoriteScreen
-import com.arihantsales.app.presentation.screens.navigation_screens.HomeScreen
+import com.arihantsales.app.presentation.screens.navigation_screens.homescreen.HomeScreen
 import com.arihantsales.app.presentation.screens.navigation_screens.ProfileScreen
 
 @Composable

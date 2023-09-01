@@ -1,4 +1,4 @@
-package com.arihantsales.app.presentation.viewmodel
+package com.arihantsales.app.presentation.screens.navigation_screens.homescreen
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
