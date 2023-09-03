@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.productdetailactivity.ProductDetailActivity" />
+        <activity android:name=".presentation.shopingcartactivity.CartActivity" />
     </application>
 
 </manifest>
