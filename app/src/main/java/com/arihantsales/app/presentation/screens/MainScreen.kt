@@ -28,9 +28,9 @@ fun MainScreen(){
                 modifier = Modifier
                     .padding(
                         5.dp,
-                        it.calculateTopPadding()
-                        ,5.dp
-                        ,it.calculateBottomPadding()
+                        it.calculateTopPadding(),
+                        5.dp,
+                        it.calculateBottomPadding()
                     )
             ){
                 SetUpNavigation(navController)
