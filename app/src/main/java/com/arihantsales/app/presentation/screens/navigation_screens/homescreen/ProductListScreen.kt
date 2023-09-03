@@ -33,7 +33,7 @@ fun ProductListScreen(
         item{
             FlowRow {
                 productList.forEach{
-                    ProductListItem(product = it){product->
+                    ProductListItem(product = it){ product ->
                         val intent = Intent(context, ProductDetailActivity::class.java)
                         intent.putExtra(Routes.ProductDetail.route+"/thumbnail",product.thumbnail)
                         intent.putExtra(Routes.ProductDetail.route+"/name",product.name)
