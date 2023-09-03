@@ -1,12 +1,15 @@
 package com.arihantsales.app.common.composable
 
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -24,7 +27,9 @@ fun BottomBar(navController: NavHostController) {
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
-    NavigationBar {
+    NavigationBar(
+        modifier = Modifier.height(60.dp)
+    ) {
         screens.forEach { screen ->
             AddItem(
                 screen = screen,
@@ -43,13 +48,17 @@ fun RowScope.AddItem(
 ) {
     if (currentDestination != null) {
         NavigationBarItem(
-            label = {
-                Text(text = screen.title)
-            },
+//            label = {
+//                Text(
+//                    text = screen.title,
+//                    style = MaterialTheme.typography.labelSmall
+//                )
+//            },
             icon = {
                 Icon(
                     imageVector = screen.icon,
-                    contentDescription = "Nav Icon"
+                    contentDescription = screen.title,
+                    modifier = Modifier.size(30.dp)
                 )
             },
             selected = currentDestination.hierarchy.any {
