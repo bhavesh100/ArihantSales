@@ -1,6 +1,7 @@
 package com.arihantsales.app.presentation.screens.navigation_screens.homescreen.composable
 
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -21,33 +22,40 @@ import com.arihantsales.app.domain.model.Product
 
 @Composable
 fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
-    Card(modifier = Modifier
-        .fillMaxWidth(0.5f)
-        .padding(7.dp)
-        .clickable {
-            onItemClick(product)
-        },
-        shape = RoundedCornerShape(5.dp),
-        elevation = CardDefaults.cardElevation(2.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary)
+    Column(
+        modifier = Modifier
+            .fillMaxWidth(0.5f)
+            .padding(10.dp)
+            .clickable {
+                onItemClick(product)
+            }
     ) {
-        AsyncImage(model = product.thumbnail,contentDescription = null,
-            contentScale = ContentScale.FillBounds,
-            modifier = Modifier
-                .aspectRatio(1f)
+        Card(modifier = Modifier
+            .fillMaxWidth(),
+            shape = RoundedCornerShape(15.dp),
+            elevation = CardDefaults.cardElevation(2.dp),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary)
+        ) {
+            AsyncImage(model = product.thumbnail,contentDescription = null,
+                contentScale = ContentScale.FillBounds,
+                modifier = Modifier
+                    .aspectRatio(1f)
+            )
+
+        }
+        Text(
+            text = product.name,
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.fillMaxWidth(),
+            style = MaterialTheme.typography.bodySmall
         )
-            Text(
-                text = product.name,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = "price 100$",
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
+        Text(
+            text = "100$",
+            modifier = Modifier.fillMaxWidth(),
+            fontWeight = FontWeight.Bold
+        )
     }
+
 
 }
 
