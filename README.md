@@ -11,5 +11,5 @@ Arihant Sales Android App is an e-commerce application for selling wall color pa
 ## Screenshot
   
  <div align="center"> 
-<img src="screenshots/screenshots.png">
+<img src="screenshots/screenshots1.png">
  </div>
