@@ -51,5 +51,5 @@ fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
 @Preview(showBackground = true)
 @Composable
 fun Preview(){
-//    ProductDetailScreen()
+    ProductDetailScreen("https","name","It is a product")
 }

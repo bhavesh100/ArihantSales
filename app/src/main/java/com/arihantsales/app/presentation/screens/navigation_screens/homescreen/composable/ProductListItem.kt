@@ -45,9 +45,9 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
         }
         Text(
             text = product.name,
-            fontWeight = FontWeight.Medium,
+            fontWeight = FontWeight.Light,
             modifier = Modifier.fillMaxWidth(),
-            style = MaterialTheme.typography.bodySmall
+            style = MaterialTheme.typography.bodyMedium
         )
         Text(
             text = "100$",
@@ -67,7 +67,7 @@ fun ItemPreiew(){
             "ubebfhr",
             "Product name",
             "example.jpg",
-            "description"
+            "de"
         )
     ){
 
