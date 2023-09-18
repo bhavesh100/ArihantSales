@@ -18,10 +18,17 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 
 @Composable
-fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
+fun ProductDetailScreen(
+    thumbnail: String?,
+    name: String,
+    description: String
+){
     val scrollableState = rememberScrollState(0)
-    Column(modifier = Modifier.verticalScroll(scrollableState)
-        .padding(5.dp)) {
+    Column(
+        modifier = Modifier
+            .verticalScroll(scrollableState)
+            .padding(5.dp)
+    ) {
         AsyncImage(
             model = thumbnail,contentDescription = null,
             contentScale = ContentScale.Crop,
@@ -30,7 +37,6 @@ fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
                 .aspectRatio(1f)
         )
         Spacer(modifier = Modifier.height(5.dp))
-
         Text(
             text = name,
             style = MaterialTheme.typography.headlineMedium
@@ -41,9 +47,9 @@ fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
             style = MaterialTheme.typography.bodyMedium
         )
         Text(
-                text = description,
-                style = MaterialTheme.typography.bodyMedium
-            )
+            text = description,
+            style = MaterialTheme.typography.bodyMedium
+        )
         Spacer(modifier = Modifier.height(5.dp))
     }
 }
@@ -51,5 +57,9 @@ fun ProductDetailScreen(thumbnail: String?,name: String,description: String){
 @Preview(showBackground = true)
 @Composable
 fun Preview(){
-    ProductDetailScreen("https","name","It is a product")
+    ProductDetailScreen(
+        "https",
+        "name",
+        "It is a product"
+    )
 }
