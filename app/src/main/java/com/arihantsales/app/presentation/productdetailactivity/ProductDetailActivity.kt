@@ -33,46 +33,47 @@ class ProductDetailActivity: ComponentActivity() {
             val description = intent.getStringExtra(Routes.ProductDetail.route+"/description")
             ArihantSalesTheme {
                 Scaffold(
-                    topBar = { TopBar("Arihant sales") },
+                    topBar = { TopBar("Product Detail") },
                     bottomBar = { Row(
                         modifier = Modifier
                             .padding(10.dp)
                     ) {
                         Box(
-                            modifier = Modifier
-                                    .fillMaxWidth(0.4f),
+                            modifier = Modifier.fillMaxWidth(0.4f),
                             contentAlignment = Alignment.Center
-                        ) { Text(
+                        ) {
+                            Text(
                             text = "100$",
                             style = MaterialTheme.typography.headlineMedium
-                        ) }
+                            )
+                        }
                         Box(
                             modifier = Modifier
-                        ) { Button(
-                            onClick = {
-
-                            },
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = RoundedCornerShape(15.dp)
-                        ){
-                            Text(text = "Buy Now")
-                        } }
-
+                        ) {
+                            Button(
+                                onClick = { },
+                                modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(15.dp)
+                            ){
+                                Text(text = "Buy Now")
+                            }
+                        }
                     } },
                     content = {
                         Box(
                             modifier = Modifier
                                 .padding(
-                                    5.dp,it.calculateTopPadding(),
+                                    5.dp,
+                                    it.calculateTopPadding(),
                                     5.dp,
                                     it.calculateBottomPadding()
                                 )
                         ){
-                                ProductDetailScreen(
-                                    thumbnail,
-                                    name!!,
-                                    description!!
-                                )
+                            ProductDetailScreen(
+                                thumbnail,
+                                name!!,
+                                description!!
+                            )
                         }
                     }
                 )
