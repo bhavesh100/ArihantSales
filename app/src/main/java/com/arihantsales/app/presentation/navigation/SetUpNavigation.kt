@@ -23,5 +23,4 @@ fun SetUpNavigation(
             ProfileScreen(navController)
         }
     }
-
 }
