@@ -39,5 +39,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     ArihantSalesTheme {
+        Surface(
+            modifier = Modifier.fillMaxSize()
+                .background(color = MaterialTheme.colorScheme.background),
+            color = MaterialTheme.colorScheme.background
+        ) {
+            LoginScreenNavigation()
+        }
     }
 }
