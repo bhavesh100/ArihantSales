@@ -52,13 +52,7 @@ android {
     }
 }
 
-
-
-
-
 dependencies {
-
-//    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.22")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.7.2")
@@ -82,9 +76,6 @@ dependencies {
     ksp("com.google.dagger:hilt-android-compiler:2.47")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
-
-//    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
-//    coil
     implementation("io.coil-kt:coil-compose:2.4.0")
 
     testImplementation("junit:junit:4.13.2")
