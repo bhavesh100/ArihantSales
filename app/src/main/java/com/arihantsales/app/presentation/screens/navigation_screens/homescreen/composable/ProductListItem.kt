@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -41,7 +40,6 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
                 modifier = Modifier
                     .aspectRatio(1f)
             )
-
         }
         Text(
             text = product.name,
@@ -55,8 +53,6 @@ fun ProductListItem(product: Product, onItemClick: (Product) -> Unit){
             fontWeight = FontWeight.Bold
         )
     }
-
-
 }
 
 @Preview(showBackground = true)
