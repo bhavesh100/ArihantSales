@@ -2,20 +2,6 @@ package com.arihantsales.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
-val Teal200 = Color(0xFF03DAC5)
-
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
-
-val gray = Color(0xFFECECEC)
-val darkgray = Color(0xFF434344)
-val lightgray = Color(0xFF707070)
-val superlightgray = Color(0xFFE8E8E8)
-
 val PrimaryLight = Color(0xFF0061a4)
 val OnPrimaryLight = Color(0xFFFFFFFF)
 val PrimaryContainerLight = Color(0xFFd1e4ff)
@@ -45,7 +31,7 @@ val SurfaceVariantLight = Color(0xFFdfe2eb)
 val OnSurfaceVariantLight = Color(0xFF43474e)
 
 // Dark
-val PrimaryDark = Color(0xFF2c9fff)
+val PrimaryDark = Color(0xFF0E1850)
 val OnPrimaryDark = Color(0xFF003258)
 val PrimaryContainerDark = Color(0xFF00497d)
 val OnPrimaryContainerDark = Color(0xFFd1e4ff)
