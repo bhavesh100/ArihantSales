@@ -2,7 +2,7 @@ package com.arihantsales.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val PrimaryLight = Color(0xFF0061a4)
+val PrimaryLight = Color(0xFFB8E2FF)
 val OnPrimaryLight = Color(0xFFFFFFFF)
 val PrimaryContainerLight = Color(0xFFd1e4ff)
 val OnPrimaryContainerLight = Color(0xFF001d36)
