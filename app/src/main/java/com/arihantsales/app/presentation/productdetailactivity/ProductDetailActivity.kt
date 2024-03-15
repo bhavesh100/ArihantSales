@@ -57,7 +57,10 @@ class ProductDetailActivity: ComponentActivity() {
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(15.dp)
                             ){
-                                Text(text = "Buy Now")
+                                Text(
+                                    text = "Buy Now",
+                                    color = MaterialTheme.colorScheme.onBackground
+                                )
                             }
                         }
                     } },
