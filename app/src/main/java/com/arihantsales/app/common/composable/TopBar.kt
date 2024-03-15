@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.arihantsales.app.presentation.navigation.BottomBarScreen
@@ -29,7 +30,13 @@ fun TopBar(title: String) {
     val context = LocalContext.current
     CenterAlignedTopAppBar(
         title = {
-            Text(text = title, maxLines = 1, overflow = TextOverflow.Ellipsis, color = Color.White)
+            Text(
+                text = title,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                color = MaterialTheme.colorScheme.onBackground,
+                fontWeight = FontWeight.Bold
+            )
         },
         colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = MaterialTheme.colorScheme.primary),
         actions = {
